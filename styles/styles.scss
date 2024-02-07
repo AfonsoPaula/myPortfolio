@@ -6,23 +6,6 @@
 }
 
 :root{
-    --color-primary: #CBD18F;
-    --color-secondary: #3A6B35;
-    --color-Tertiary: #E3B448;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-gey-0: #f8f8f8;
-    --color-gey-1: #dbe1e8;
-    --color-gey-2: #b2becd;
-    --color-gey-3: #6c7983;
-    --color-gey-4: #454e56;
-    --color-gey-5: #2a2e35;
-    --color-gey-6: #12181b;
-    --br-sm-2: 14px; 
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3)
-}
-
-.dark-mode{
     --color-primary: #31473A;
     --color-secondary: #EDF4F2;
     --color-Tertiary: #7C8363;
@@ -35,6 +18,23 @@
     --color-gey-4: #b2becd;
     --color-gey-5: #dbe1e8;
     --color-gey-6: #f8f8f8;
+    --br-sm-2: 14px; 
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3)
+}
+
+.light-mode{
+    --color-primary: #CBD18F;
+    --color-secondary: #3A6B35;
+    --color-Tertiary: #E3B448;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-gey-0: #f8f8f8;
+    --color-gey-1: #dbe1e8;
+    --color-gey-2: #b2becd;
+    --color-gey-3: #6c7983;
+    --color-gey-4: #454e56;
+    --color-gey-5: #2a2e35;
+    --color-gey-6: #12181b;
 }
 
 body{
@@ -169,7 +169,7 @@ section{
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: var(--color-gey-4);
+    background-color: var(--color-black);
     cursor: pointer;
     position: fixed;
     display: flex;
@@ -182,7 +182,7 @@ section{
     }
     i{
         font-size: 1.4rem;
-        color: var(--color-gey-2);
+        color: var(--color-gey-3);
         pointer-events: none;
     }
 }
@@ -305,8 +305,15 @@ section{
             color: var(--color-grey-1);
         }
         h4{
+            text-align: center;
             font-size: 3rem;
             text-transform: uppercase;
+            text-shadow: 0px 11px 10px rgba(123, 119, 105, 0.8);
+        }
+        .btn-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
@@ -323,12 +330,13 @@ section{
             .prog-title {
                 text-transform: uppercase;
                 font-weight: 500;
+                color: var(--color-black);
             }
             .progress-con {
                 display: flex;
                 align-items: center;
                 .prog-text {
-                    color: var(--color-grey-2);
+                    color: var(--color-gey-4);
                 }
                 .progress {
                     width: 100%;
@@ -363,6 +371,7 @@ section{
     text-align: center;
     padding: 3.5rem 0;
     position: relative;
+    text-shadow: 0px 2px 10px rgba(123, 119, 105, 0.8);
     &::before{
         position: absolute;
         content: '';
@@ -703,6 +712,7 @@ section{
     align-self: flex-start;
     align-items: center;
     overflow: hidden;
+    margin-top: 1rem;
     .btn-text{
         padding: 0 2rem;
     }
@@ -735,11 +745,11 @@ section{
 
 .main-title{
     text-align: center;
-    color: var(--color-gey-5);
+    color: var(--color-Tertiary);
     h2{
         position: relative;
         text-transform: uppercase;
-        font-size: 4rem;
+        font-size: 5rem;
         font-weight: 700;
         text-shadow: 
             -1px -1px 0 black,  
@@ -748,18 +758,6 @@ section{
             1px 1px 0 black;
         span{
             color: var(--color-secondary);
-        }
-        .bg-text{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            color: var(--color-Tertiary);
-            transition: all .4s ease-in-out;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            font-size: 6.3rem;
-            font-weight: 900;
-            font: 6.3rem;
         }
     }
 }

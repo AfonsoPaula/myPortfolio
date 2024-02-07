@@ -37,7 +37,7 @@ function PageTransitions(){
     const themebtn = document.querySelector('.theme-btn');
     themebtn.addEventListener('click', () =>{
         let element = document.body;
-        element.classList.toggle('dark-mode');
+        element.classList.toggle('light-mode');
     })
 }
 

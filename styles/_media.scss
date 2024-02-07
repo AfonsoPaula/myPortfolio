@@ -1,21 +1,4 @@
 :root{
-    --color-primary: #CBD18F;
-    --color-secondary: #3A6B35;
-    --color-Tertiary: #E3B448;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-gey-0: #f8f8f8;
-    --color-gey-1: #dbe1e8;
-    --color-gey-2: #b2becd;
-    --color-gey-3: #6c7983;
-    --color-gey-4: #454e56;
-    --color-gey-5: #2a2e35;
-    --color-gey-6: #12181b;
-    --br-sm-2: 14px; 
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3)
-}
-
-.dark-mode{
     --color-primary: #31473A;
     --color-secondary: #EDF4F2;
     --color-Tertiary: #7C8363;
@@ -28,6 +11,31 @@
     --color-gey-4: #b2becd;
     --color-gey-5: #dbe1e8;
     --color-gey-6: #f8f8f8;
+    --br-sm-2: 14px; 
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3)
+}
+
+.dark-mode{
+    --color-primary: #CBD18F;
+    --color-secondary: #3A6B35;
+    --color-Tertiary: #E3B448;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-gey-0: #f8f8f8;
+    --color-gey-1: #dbe1e8;
+    --color-gey-2: #b2becd;
+    --color-gey-3: #6c7983;
+    --color-gey-4: #454e56;
+    --color-gey-5: #2a2e35;
+    --color-gey-6: #12181b;
+}
+
+@media screen and (max-width: 1560px){
+
+    section{
+        padding: 3rem 14rem;
+    }
+
 }
 
 @media screen and (max-width: 1432px){
@@ -36,8 +44,12 @@
         padding: 0 !important;
     }
 
+    .header-content .right-header {
+        padding-right: 10rem;
+    }
+
     .section{
-        padding: 7rem 11rem;
+        padding: 2rem 11rem;
     }
 
     /*------------- CONTACT ------------- */
@@ -63,12 +75,40 @@
     }
 }
 
+@media screen and (max-width: 1300px){
+
+    .section{
+        padding: 3rem 8rem;
+    }
+
+}
+
+@media screen and (max-width: 1125px){
+    .controlls{
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        background-color: var(--color-gey-5);
+        .control{
+            margin: .8rem 2.5rem;
+        }
+    }
+}
+
 @media screen and (max-width: 1070px){
 
     .about-container{
         grid-template-columns: 1fr;
         .right-about{
             padding-top: 2.5rem;
+        }
+        .left-about{
+            place-items: center;
+            padding-right: 0;
         }
     }
 
@@ -82,22 +122,24 @@
 
     .main-title{
         h2{
-            font-size: 4rem;
-            span{
-                font-size: 4rem;
-            }
-            .bg-text{
-                font-size: 4.5rem;
-            }
+            font-size: 5rem;
         }
+    }
+
+    .btn-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: 0rem;
+    }
+
+    .section{
+        padding: 2rem 2.5rem;
     }
 }
 
 @media screen and (max-width: 970px){
-
-    .section{
-        padding: 7rem 6rem;
-    }
 
     /*------------- HEADER ---------------*/
     header{
@@ -153,22 +195,33 @@
     }
 }
 
+@media screen and (max-width: 970px) and (max-height: 1670px) {
+
+    .header-content .right-header {
+        margin-top: 2rem;
+    }
+}
+
 @media screen and (max-width: 700px){
     section{
         padding: 7rem 3rem;
     }
+
+    .about-container{
+        padding-top: 2.5rem;    
+    }
+
     .about-stats .progress-bars{
         grid-template-columns: 1fr;
     }
+
+    .about-container .left-about h4{
+        font-size: 2rem;
+    }
+
     .main-title{
         h2{
-            font-size: 3rem;
-            span{
-                font-size: 3rem;
-            }
-            .bg-text{
-                font-size: 4rem;
-            }
+            font-size: 4rem;
         }
     }
 }
@@ -176,6 +229,10 @@
 @media screen and (max-width: 600px){
 
     /*-------------- ABOUT ---------------*/
+
+    .about-container .left-about h4{
+        font-size: 1.7rem;
+    }
 
     .about-container{
         grid-template-columns: 1fr;
@@ -244,18 +301,6 @@
         padding: 2rem 2.5rem;
     }
 
-    .main-title{
-        h2{
-            font-size: 2.5rem;
-            span{
-                font-size: 2.5rem;
-            }
-            .bg-text{
-                font-size: 3rem;
-            }
-        }
-    }
-
     .controlls{
         top: auto;
         bottom: 0;
@@ -267,6 +312,12 @@
         background-color: var(--color-gey-5);
         .control{
             margin: 1rem .3rem;
+        }
+    }
+
+    .main-title{
+        h2{
+            font-size: 3rem;
         }
     }
 }
