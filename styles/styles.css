@@ -300,9 +300,10 @@ section {
 .about-container .left-about p {
   line-height: 2rem;
   padding: 1rem;
-  color: var(--color-grey-1);
+  color: var(--color-gey-4);
 }
 .about-container .left-about h4 {
+  color: var(--color-gey-4);
   text-align: center;
   font-size: 3rem;
   text-transform: uppercase;
@@ -375,7 +376,7 @@ section {
 
 .stat-title {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-align: center;
   padding: 3.5rem 0;
   position: relative;
@@ -844,37 +845,6 @@ section {
   }
 }
 @media screen and (max-width: 1070px) {
-  .about-container {
-    grid-template-columns: 1fr;
-  }
-  .about-container .right-about {
-    padding-top: 2.5rem;
-  }
-  .about-container .left-about {
-    place-items: center;
-    padding-right: 0;
-  }
-  .portfolios {
-    grid-template-columns: 1fr 1fr;
-  }
-  .blogs {
-    grid-template-columns: 1fr 1fr;
-  }
-  .main-title h2 {
-    font-size: 5rem;
-  }
-  .btn-con {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    align-self: center;
-    margin-bottom: 0rem;
-  }
-  .section {
-    padding: 2rem 2.5rem;
-  }
-}
-@media screen and (max-width: 970px) {
   /*------------- HEADER ---------------*/
   header {
     padding: 0 !important;
@@ -905,6 +875,43 @@ section {
     margin: 0 auto !important;
     width: 90%;
   }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    padding-top: 2.5rem;
+  }
+  .about-container .left-about {
+    place-items: center;
+    padding-right: 0;
+  }
+  .timeline {
+    padding-bottom: 5rem;
+  }
+  .portfolios {
+    grid-template-columns: 1fr 1fr;
+  }
+  .blogs {
+    grid-template-columns: 1fr 1fr;
+  }
+  .main-title h2 {
+    font-size: 5rem;
+  }
+  .btn-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 0rem;
+  }
+  .section {
+    padding: 2rem 2.5rem;
+  }
+  .header-content .right-header {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 970px) {
   .controlls {
     top: auto;
     bottom: 0;
@@ -914,6 +921,7 @@ section {
     transform: translate(-50%);
     width: 100%;
     background-color: var(--color-gey-5);
+    margin-top: 6rem;
   }
   .controlls .control {
     margin: 0.8rem 2rem;
@@ -952,6 +960,7 @@ section {
   .about-container .right-about {
     grid-template-columns: 1fr;
     padding-top: 2.5rem;
+    padding: 2.5rem 2rem;
   }
   .about-container .left-about {
     align-items: center;
@@ -961,12 +970,16 @@ section {
   .about-container .left-about p {
     padding-left: 0;
   }
+  .about-container .right-about .about-item .abt-text {
+    place-items: center;
+  }
   .timeline {
     grid-template-columns: 1fr;
     padding-bottom: 5rem;
   }
   .about-stats .progress-bars {
     grid-template-columns: 1fr;
+    place-content: center;
   }
   /*------------ PORTFOLIO ------------- */
   .portfolios {
