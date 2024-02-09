@@ -249,6 +249,10 @@
         padding: 7rem 3rem;
     }
 
+    .header-content .right-header {
+        margin-bottom: 1.5rem;
+    }
+
     .about-container{
         padding-top: 2.5rem;    
     }
@@ -281,6 +285,13 @@
 
     .about-container .left-about h4{
         font-size: 1.7rem;
+    }
+
+    .about-container .left-about p {
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        padding: 0rem;
+        color: var(--color-gey-4);
     }
 
     .about-container{
@@ -335,7 +346,7 @@
         .right-contact{
             margin-left: 0rem;
             margin-right: 0rem;
-            margin-top: 2.5rem;
+            margin-top: 0rem;
         }
 
         .left-contact{
@@ -380,8 +391,19 @@
 
 @media screen and (max-width: 500px){
 
+    .section {
+        padding: 2rem 1.5rem;
+    }
+
+    .timeline .timeline-item {
+        position: relative;
+        padding-left: 2rem;
+        margin-left: 1rem;
+        border-left: 2px solid var(--color-gey-5);
+    }
+
     .contact-content-con .left-contact{
-        padding: 0.3rem;
+        padding: 1rem;
         .contact-info .contact-item {
             margin-left: 0rem;
             .icon{
