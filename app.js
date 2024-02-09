@@ -41,4 +41,6 @@ function PageTransitions(){
     })
 }
 
-PageTransitions();
+document.addEventListener('DOMContentLoaded', function() {
+    PageTransitions();
+});

@@ -53,8 +53,10 @@
     }
 
     /*------------- CONTACT ------------- */
+
     .contact-content-con{
         flex-direction: column;
+        padding-top: 0rem;
         .right-contact{
             margin-left: 0;
             margin-top: 2.5rem;
@@ -87,6 +89,14 @@
 
     .portfolios{
         padding-bottom: 6rem;
+    }
+
+    .contact-content-con .right-contact{
+        margin-bottom: 6rem;
+        .submit-btn{
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .controlls{
@@ -168,6 +178,15 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .contact-content-con .left-contact {
+        margin: 2rem 10rem;
+    }
+
+    .contact-content-con .right-contact {
+        margin-left:  10rem;
+        margin-right: 10rem;
+    }
+
     .main-title{
         h2{
             font-size: 5rem;
@@ -207,6 +226,15 @@
             margin: .8rem 2rem;
         }
     }
+
+    .contact-content-con .left-contact {
+        margin: 2rem 4rem;
+    }
+
+    .contact-content-con .right-contact {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
 }
 
 @media screen and (max-width: 970px) and (max-height: 1670px) {
@@ -231,6 +259,13 @@
 
     .about-container .left-about h4{
         font-size: 2rem;
+    }
+
+    .contact-content-con .left-contact .contact-icon {
+        margin-bottom: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-row-gap: 2rem;
     }
 
     .main-title{
@@ -259,9 +294,9 @@
             align-items: center;
             justify-content: center;
             padding-right: 0;
-            p{
-                padding-left: 0;
-            }
+            // p{
+            //     padding-left: 0;
+            // }
         }
     }
 
@@ -281,6 +316,7 @@
         }
     }
 
+
     /*------------ PORTFOLIO ------------- */
     .portfolios{
         grid-template-columns: 1fr;
@@ -297,12 +333,13 @@
     .contact-content-con{
         flex-direction: column;
         .right-contact{
-            margin-left: 0;
+            margin-left: 0rem;
+            margin-right: 0rem;
             margin-top: 2.5rem;
         }
 
         .left-contact{
-            margin-top: 3rem;
+            margin: 2rem 0rem;
         }
     }
 
@@ -314,7 +351,6 @@
         margin-left: 0;
         margin-top: 1.5rem;
     }
-
     /* --------------------------------- */
 
     .section{
@@ -339,5 +375,31 @@
         h2{
             font-size: 3rem;
         }
+    }
+}
+
+@media screen and (max-width: 500px){
+
+    .contact-content-con .left-contact{
+        padding: 0.3rem;
+        .contact-info .contact-item {
+            margin-left: 0rem;
+            .icon{
+                display: grid;
+                grid-template-columns: 20px 1fr;
+                i{
+                    display: flex;
+                    align-items: center;
+                    font-size: 0.9rem;
+                    color: var(--color-white);
+                }
+            }
+        }
+    }
+
+    .contact-content-con .left-contact .contact-icon{
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 }

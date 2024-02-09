@@ -354,12 +354,17 @@ section{
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
-                    .html { width: 80%; }
-                    .css { width: 95%; }
-                    .js { width: 75%; }
-                    .react{ width: 60%; }
-                    .node{ width: 87%; }
-                    .python{ width: 70%; }
+                    .html { width: 85%; }
+                    .css { width: 81%; }
+                    .js { width: 64%; }
+                    .java{ width: 75%; }
+                    .sql{ width: 87%; }
+                    .python{ width: 85%; }
+                    .php{ width: 65%; }
+                    .c{ width: 82%; }
+                    .bash{ width: 72%; }
+                    .python{ width: 74%; }
+                    .docker{ width: 65%; }
                 }
             }
         }
@@ -581,6 +586,7 @@ section{
 .contact-content-con{
     display: flex;
     padding-top: 5rem;
+
     .left-contact{
         transform: scale(1);
         transition: all .4s ease-in-out;
@@ -607,7 +613,7 @@ section{
             .contact-item{
                 display: flex;
                 align-items: center;
-                justify-content:space-between;
+                margin-left: 2rem;
                 p{
                     margin: .3rem 0 !important;
                     padding: 0 !important;
@@ -625,43 +631,40 @@ section{
             }
         }
 
-        .contact-icon{
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .contact-icon {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            place-items: center;
             margin-top: 2rem;
-            a{
+            margin: 1rem 3rem;
+            a {
                 display: flex;
                 align-items: center;
                 color: var(--color-secondary);
                 background-color: var(--color-primary);
                 cursor: pointer;
                 justify-content: center;
-                width: 50px;
-                height: 50px;
+                width: 60px;
+                height: 60px;
                 border-radius: 50%;
-                margin: 0 .4rem;
-                transition: all .2s ease-in-out;
+                margin: 0 1rem;
+                transition: all 0.2s ease-in-out;
                 transform: scale(1);
                 border: 1px solid var(--color-secondary);
-                &:hover{
-                    background-color: var(--color-primary);
-                    transform: scale(1.1);
-                }
             }
-            i{
+            a:hover {
+                background-color: var(--color-primary);
+                transform: scale(1.1);
+            }
+            i {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 font-size: 1.3rem;
             }
         }
-        &:hover{
-            transition: all .4s ease-in-out;
-            transform: scale(1.1);
-        }
     }
-
+    
     .right-contact{
         flex: 3;
         margin-left: 4rem;
@@ -694,7 +697,6 @@ section{
         }
     }
 }
-
 
 /* Independed Components*/
 .btn-con{
