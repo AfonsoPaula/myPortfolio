@@ -244,7 +244,7 @@ section {
 
 /* ----------------- About ----------------- */
 .about-container {
-  text-align: left;
+  text-align: start;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
@@ -266,6 +266,7 @@ section {
   transform: translateY(-5px);
   border: 3px solid var(--color-Tertiary);
   box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+  background-color: var(--color-Tertiary);
 }
 .about-container .right-about .about-item .abt-text {
   padding: 1.5rem;
@@ -356,28 +357,28 @@ section {
   width: 60%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
-  width: 85%;
+  width: 82%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .css {
-  width: 81%;
+  width: 71%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .js {
-  width: 64%;
+  width: 54%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .java {
-  width: 75%;
+  width: 65%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .sql {
-  width: 87%;
+  width: 79%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .python {
-  width: 85%;
+  width: 82%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .php {
   width: 65%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .c {
-  width: 82%;
+  width: 80%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .bash {
   width: 72%;
@@ -386,7 +387,22 @@ section {
   width: 74%;
 }
 .about-stats .progress-bars .progress-bar .progress-con .progress .docker {
-  width: 65%;
+  width: 55%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .team {
+  width: 87%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .communication {
+  width: 75%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .adaptability {
+  width: 77%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .critical {
+  width: 73%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .maisum {
+  width: 73%;
 }
 
 .stat-title {
@@ -706,7 +722,31 @@ section {
 }
 .contact-content-con .right-contact .submit-btn {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
+}
+.contact-content-con .right-contact .submit-btn .contact-btn {
+  background-color: var(--color-Tertiary);
+  border-radius: 30px;
+  color: var(--color-white);
+  font-weight: 600;
+  position: relative;
+  border: 2px solid var(--color-primary);
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.contact-content-con .right-contact .submit-btn .contact-btn .btn-text2 {
+  padding: 0 2rem;
+}
+.contact-content-con .right-contact .submit-btn .contact-btn .btn-icon2 {
+  background-color: var(--color-Tertiary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
 }
 
 /* Independed Components*/

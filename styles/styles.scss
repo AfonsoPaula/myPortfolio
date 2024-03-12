@@ -247,7 +247,7 @@ section{
 
 /* ----------------- About ----------------- */
 .about-container{
-    text-align: left;
+    text-align: start;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-top: 3.5rem;
@@ -266,6 +266,7 @@ section{
                 transform: translateY(-5px);
                 border: 3px solid var(--color-Tertiary);
                 box-shadow: 1px 4px 15px rgba(0,0,0,.32);
+                background-color: var(--color-Tertiary);
             }
             .abt-text{
                 padding: 1.5rem;
@@ -354,17 +355,22 @@ section{
                         transition: all .4s ease-in-out;
                         width: 60%;
                     }
-                    .html { width: 85%; }
-                    .css { width: 81%; }
-                    .js { width: 64%; }
-                    .java{ width: 75%; }
-                    .sql{ width: 87%; }
-                    .python{ width: 85%; }
+                    .html { width: 82%; }
+                    .css { width: 71%; }
+                    .js { width: 54%; }
+                    .java{ width: 65%; }
+                    .sql{ width: 79%; }
+                    .python{ width: 82%; }
                     .php{ width: 65%; }
-                    .c{ width: 82%; }
+                    .c{ width: 80%; }
                     .bash{ width: 72%; }
                     .python{ width: 74%; }
-                    .docker{ width: 65%; }
+                    .docker{ width: 55%; }
+                    .team{ width: 87%; }
+                    .communication{ width: 75%; }
+                    .adaptability{ width: 77%; }
+                    .critical{ width: 73%; }
+                    .maisum{ width: 73%; }
                 }
             }
         }
@@ -693,7 +699,31 @@ section{
         }
         .submit-btn{
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
+            .contact-btn{
+                background-color: var(--color-Tertiary);
+                border-radius: 30px;
+                color: var(--color-white);
+                font-weight: 600;
+                position: relative;
+                border: 2px solid var(--color-primary);
+                display: flex;
+                align-self: flex-start;
+                align-items: center;
+                overflow: hidden;
+                margin-top: 1rem;
+                .btn-text2{
+                    padding: 0 2rem;
+                }
+                .btn-icon2{
+                    background-color: var(--color-Tertiary);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+            }
         }
     }
 }
